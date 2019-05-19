@@ -1,0 +1,153 @@
+body {
+    width: 1280px;
+    position: relative;
+    height: 1754px;
+    margin: 0;
+    padding: 0;
+    margin-top: -32px;
+}
+#header {
+    width: 100%;
+    height: 10%;
+    background-color: lightgrey;
+    text-align: center;
+}
+
+#leftSide {
+    width: 35%;
+    height: 86%;
+    font-size: 120%;
+    color: white;
+}
+
+#top {
+    width: 100%;
+    height: 33%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+}
+#bottom {
+    width: 100%;
+    height: 67%;
+    background-color: darkred;
+    display: flex;
+    justify-content: space-around;
+}
+
+#rightSide {
+    width: 65%;
+    height: 86%;
+    font-size: 120%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#name {
+    font-size: 200%;
+    font-weight: bolder;
+}
+
+#profession {
+    font-weight: bold;
+    font-size: 150%;
+}
+
+#contact-information {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 125%;
+}
+
+#email {
+    display: inline;
+}
+
+#phone-number {
+    display: inline;
+}
+
+.leftSide-section-heading>hr {
+    border-color: white;
+}
+.education-detail-head {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.education-detail {
+    margin-top: 10%;
+    width: 100%;
+
+}
+.justify-content-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.align-content-space-between {
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+}
+
+.education-detail-section {
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+.technical-skills {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.each-skill-type-heading {
+    margin-bottom: 5%;
+    font-weight: bold;
+}
+.info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.right-side-content-heading {
+    font-weight: bold;
+}
+
+.bottom-content {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.top-content {
+    width: 90%;
+    height: 90%;
+    margin: auto;
+}
+
+.right-side-contents {
+    width: 95%;
+    height: 96.7%;
+    margin: auto;
+}
+
+.right-side-content-section-heading {
+    font-weight: bolder;
+}
+
+.red {
+    color: red;
+}
