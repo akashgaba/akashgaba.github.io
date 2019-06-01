@@ -146,8 +146,26 @@ body {
 
 .right-side-content-section-heading {
     font-weight: bolder;
+    display: flex;
 }
 
 .red {
     color: red;
+}
+
+.right {
+    margin-left: auto;
+    margin-right: 0;
+}
+.left {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.inline {
+    display: flex;
+}
+
+.bold {
+    font-weight: bolder;
 }
