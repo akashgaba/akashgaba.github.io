@@ -5,6 +5,8 @@ body {
     margin: 0;
     padding: 0;
     margin-top: -32px;
+    font-family: 'Chilanka', cursive;
+    font-size: 105%;
 }
 #header {
     width: 100%;
