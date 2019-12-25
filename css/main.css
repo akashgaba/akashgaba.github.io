@@ -40,7 +40,7 @@ body {
 #rightSide {
     width: 65%;
     height: 86%;
-    font-size: 120%;
+    font-size: 119%;
     display: flex;
     justify-content: space-around;
 }
@@ -115,6 +115,7 @@ body {
 .each-skill-type-heading {
     margin-bottom: 5%;
     font-weight: bold;
+    text-decoration: underline;
 }
 .info {
     width: 100%;
