@@ -1,58 +1,64 @@
+:root{
+    --full-width: 210mm;
+    --full-height: 297mm;
+    --height-93: 276.21mm;
+    --height-7: 20.79mm;
+    --height-37_2: 110.484mm;
+    --height-55_8: 165.726mm;
+}
+html {
+    width: var(--full-width);
+    height: var(--full-height);
+}
 body {
-    width: 1200px;
+    height: var(--full-height);
     position: relative;
-    height: 1750px;
-    margin: 0;
-    padding: 0;
+    width: var(--full-width);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 115%;
+    font-size: 3mm;
+    margin: 0%;
 }
 #header {
     width: 100%;
-    height: 10%;
+    height: var(--height-7);
     background-color: lightgrey;
     text-align: center;
 }
 
 #leftSide {
-    width: 35%;
-    height: 86%;
-    font-size: 120%;
+    width: 40%;
+    height: var(--height-93);
     color: white;
 }
 
 #top {
     width: 100%;
-    height: 40%;
+    height: var(--height-37_2);
     background-color: black;
     display: flex;
     justify-content: space-around;
 }
 #bottom {
     width: 100%;
-    height: 60%;
+    height: var(--height-55_8);
     background-color: darkred;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 10%;
 }
 
 #rightSide {
-    width: 65%;
-    height: 86%;
-    font-size: 120%;
+    width: 60%;
+    height: var(--height-93);
     display: flex;
     justify-content: space-around;
 }
 
 #name {
-    font-size: 200%;
     font-weight: bolder;
 }
 
 #profession {
     font-weight: bold;
-    font-size: 150%;
 }
 
 #contact-information {
@@ -60,7 +66,6 @@ body {
     margin: auto;
     display: flex;
     justify-content: space-between;
-    font-size: 125%;
 }
 
 #email {
@@ -106,7 +111,7 @@ body {
     text-align: justify;
 }
 .technical-skills {
-    height: 100%;
+    height: var(--height-55_8);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -119,7 +124,7 @@ body {
 }
 .info {
     width: 100%;
-    height: 100%;
+    height: var(--height-93);
     display: flex;
     flex-direction: row;
     justify-content: stretch;
@@ -180,6 +185,6 @@ body {
 .bolder {
     font-weight: bolder;
 }
-.bigger {
-    font-size: 125%;
+p {
+    margin: 0%;
 }
