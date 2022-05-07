@@ -5,6 +5,7 @@
     --height-top: 17mm;
     --height-left-top: 100mm;
     --height-left-bottom: 155mm;
+    --height-technical-skills: 135mm;
 }
 html {
     width: var(--full-width);
@@ -119,6 +120,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    height: var(--height-technical-skills);
 }
 
 .each-skill-type-heading {
@@ -194,11 +196,11 @@ p {
 }
 
 li {
-    margin-bottom: -2mm;
+    margin-bottom: -1.5mm;
 }
 
 .technology {
     background-color: red;
-    color: white;
+    color: black;
     padding: 0.5mm;
 }
