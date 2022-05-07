@@ -1,10 +1,11 @@
 :root{
     --full-width: 210mm;
-    --full-height: 297mm;
-    --height-93: 276.21mm;
-    --height-7: 20.79mm;
-    --height-37_2: 110.484mm;
-    --height-55_8: 165.726mm;
+    --full-height: 272mm;
+    --height-right: 255mm;
+    --height-top: 17mm;
+    --height-left-top: 100mm;
+    --height-left-bottom: 155mm;
+    --height-technical-skills: 135mm;
 }
 html {
     width: var(--full-width);
@@ -20,27 +21,31 @@ body {
 }
 #header {
     width: 100%;
-    height: var(--height-7);
+    height: var(--height-top);
     background-color: lightgrey;
     text-align: center;
 }
 
+#header p {
+    margin-bottom: 2mm;
+}
+
 #leftSide {
     width: 40%;
-    height: var(--height-93);
+    height: var(--height-right);
     color: white;
 }
 
 #top {
     width: 100%;
-    height: var(--height-37_2);
+    height: var(--height-left-top);
     background-color: black;
     display: flex;
     justify-content: space-around;
 }
 #bottom {
     width: 100%;
-    height: var(--height-55_8);
+    height: var(--height-left-bottom);
     background-color: darkred;
     display: flex;
     justify-content: space-around;
@@ -48,7 +53,7 @@ body {
 
 #rightSide {
     width: 60%;
-    height: var(--height-93);
+    height: var(--height-right);
     display: flex;
     justify-content: space-around;
 }
@@ -111,10 +116,11 @@ body {
     text-align: justify;
 }
 .technical-skills {
-    height: var(--height-55_8);
+    height: var(--height-left-bottom);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    height: var(--height-technical-skills);
 }
 
 .each-skill-type-heading {
@@ -124,7 +130,7 @@ body {
 }
 .info {
     width: 100%;
-    height: var(--height-93);
+    height: var(--height-right);
     display: flex;
     flex-direction: row;
     justify-content: stretch;
@@ -187,4 +193,14 @@ body {
 }
 p {
     margin: 0%;
+}
+
+li {
+    margin-bottom: -1.5mm;
+}
+
+.technology {
+    background-color: red;
+    color: black;
+    padding: 0.5mm;
 }
