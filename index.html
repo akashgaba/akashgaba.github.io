@@ -12,16 +12,16 @@
   <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="app">
   <div id="header">
-    <p id="name">Akash Gaba</p>
-    <p id="profession">SOFTWARE ENGINEER (JAVA DEVELOPER )</p>
+    <p id="name">{{name}}</p>
+    <p id="profession">{{profession}}</p>
     <div id="contact-information">
       <div id="email">
-        <i class="fa fa-envelope-o"></i> aakashgaba@gmail.com
+        <i class="fa fa-envelope-o"></i> {{emails}}
       </div>
       <div id="phone-number">
-        <i class="fa fa-mobile-phone"></i> 8285216287, 8700901205
+        <i class="fa fa-mobile-phone"></i> {{phone_numbers}}
       </div>
     </div>
   </div>
@@ -165,7 +165,7 @@
             <div class="right-side-content-section">
               <div class="right-side-content-section-heading">
                 <div class="left">
-                  <span class="red">Sophos</span> (Software Engineer 2)
+                  <span class="red">Sophos</span> (Software Engineer 3)
                 </div>
                 <div class="right">November 2020 - Present</div>
               </div>
@@ -268,5 +268,7 @@
       </div>
     </div>
 </body>
+<script src="https://unpkg.com/vue@3"></script>
+<script type="module" src="js/app.js"></script>
 
 </html>
