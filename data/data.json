@@ -2,5 +2,68 @@
     "name": "Akash Gaba",
     "profession": "Software Engineer",
     "emails": ["aakashgaba@gmail.com"],
-    "phone_numbers":[8285216287, 8700901205]
+    "phone_numbers":[8285216287, 8700901205],
+    "work_experiences": [
+        {
+            "title": "Software Engineer 3",
+            "company_name": "Sophos",
+            "location" : "Gurugram, Haryana",
+            "working_range" : "November 2020 - Present",
+            "project_and_experience" :
+            [
+                {
+                    "name" : "Unreleased Product",
+                    "brief" : "This product focused on the security posture of office 365.",
+                    "experience" : [
+                        "Involved in the design and development of the product from scratch.",
+                        "Development involved integration with azure for security analysis, designing database tables and incorporating different AWS services like SQS, SNS, etc."
+                    ]
+                },
+                {
+                    "name" : "Cloud Optix",
+                    "brief" : "It is a Cloud Security Posture Management which manages the security of AWS, GCP and/or Azure cloud infrastructure.",
+                    "experience" : [
+                        "Designed and developed an easily digestible pdf format summary of the required data points which is delivered to more than 50 thousand users on weekly basis.",
+                        "Responsible for the improvement of the AWS fetcher system of inventory. This includes the introduction of a hybrid configurable retry mechanism, monitoring advancement and overall stability of the fetching system.",
+                        "Helps in the development and improvement of different requirements which includes an interaction with different AWS services and code optimization."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Software Development Engineer",
+            "company_name": "Wheelseye",
+            "location" : "Gurugram, Haryana",
+            "working_range" : "September 2019 - November 2020",
+            "project_and_experience" :
+            [
+                {
+                    "name" : "Sales App",
+                    "brief" : "The Sales app of Wheelseye provides a mobile-app-based solution to the complete sales team hierarchy.",
+                    "experience" : [
+                        "Design and development of an invoicing system which manages the daily sales of the service sold. It includes migrating old invoices to the new system, creating a dashboard for operation teams to handle invoices and interacting with different services to process payment.",
+                        "Involved in the design and development of an update/information announcement system for the sales team to take action on. This involved creating a dashboard for the operation team to provide the update for the sales team view in the android app."
+                    ]
+                }
+            ]
+        },
+        {
+            "title": "Associate L1",
+            "company_name": "Avizva Solutions",
+            "location" : "Gurugram, Haryana",
+            "working_range" : "June 2018 - September 2019",
+            "project_and_experience" :
+            [
+                {
+                    "name" : "Mibenefits",
+                    "brief" : "It is an employee benefit management portal.",
+                    "experience" : [
+                        "Involved in requirement gathering and development of different modules. Developed modules which required interaction with different services like Postgres, Elasticsearch, Redis, etc.",
+                        "Involved in improving fundamental features of the existing application.",
+                        "Involved in converting Old SpringJDBC queries to Spring JPA queries which reduced code line to 30%."
+                    ]
+                }
+            ]
+        }
+    ]
 }

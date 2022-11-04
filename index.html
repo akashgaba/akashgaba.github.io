@@ -162,99 +162,24 @@
             <hr>
           </div>
           <div class="right-side-content-sections">
-            <div class="right-side-content-section">
+
+
+            <div class="right-side-content-section" v-for = 'work_experience in work_experiences'>
               <div class="right-side-content-section-heading">
                 <div class="left">
-                  <span class="red">Sophos</span> (Software Engineer 3)
+                  <span class="red">{{work_experience.company_name}}</span> ({{work_experience.title}})
                 </div>
-                <div class="right">November 2020 - Present</div>
+                <div class="right">{{work_experience.working_range}}</div>
               </div>
-              <div class="right-side-content-section-data">
+              <div class="right-side-content-section-data" v-for = 'project_and_experience in work_experience.project_and_experience'>
                 <ul class="align-content-space-between">
                   <li class="inline li">
-                    <div class="left bolder bigger">Cloud Optix: It is a Cloud Security Posture Management which manages
-                      the security of AWS, GCP and/or Azure cloud infrastructure.</div>
+                    <div class="left bigger"><strong>{{project_and_experience.name}}</strong>: {{project_and_experience.brief}}</div>
                   </li>
                   <ul>
-                    <li class="li">Key Activities:</li>
-                    <ul>
-                      <li class="li">Logzio visualization and dashboard creation.</li>
-                      <li class="li">Working with different AWS cloud services.</li>
-                      <li class="li">Writting Unit and Integration tests.</li>
-                    </ul>
-                    <li class="li">Key modules:</li>
-                    <ul>
-                      <li class="li">Weekly Summary Report</li>
-                      <li class="li">Inventory pages</li>
-                      <li class="li">AWS fetcher enhancement</li>
-                    </ul>
-                    <li class="li"><span class="technology">Technology: PostgresSQL, Spring JPA, SQS, EC2, S3</span>
-                    </li>
+                    <li class="li" v-for = 'experience in project_and_experience.experience'>{{experience}}</li>
                   </ul>
                 </ul>
-              </div>
-            </div>
-            <div class="right-side-content-section">
-              <div class="right-side-content-section-heading">
-                <div class="left">
-                  <span class="red">Wheelseye</span> (Software Development Engineer)
-                </div>
-                <div class="right">September 2019 - November 2020</div>
-              </div>
-              <div class="right-side-content-section-data">
-                <ul class="align-content-space-between">
-                  <li class="inline li">
-                    <div class="left bolder bigger">Sales App: The Sales app of Wheelseye provides a mobile-app based
-                      solution to the complete sales team hierarchy.</div>
-                  </li>
-                  <ul>
-                    <li class="li">Development involved interaction with different MicroServices, Kafka, and PostgreSQL.
-                    </li>
-                    <li class="li">Key activities:</li>
-                    <ul>
-                      <li class="li">Migrating old invoices to the database.</li>
-                      <li class="li">Improving the overall quality of code.</li>
-                    </ul>
-                    <li class="li">Key modules:</li>
-                    <ul>
-                      <li class="li">Invoicing System</li>
-                      <li class="li">Update Announcement</li>
-                      <li class="li">Incentive Calculation</li>
-                    </ul>
-                    <li class="li"><span class="technology">Technology: PostgresSQL, Spring JPA</span></li>
-                  </ul>
-                </ul>
-              </div>
-            </div>
-            <div class="right-side-content-section">
-              <div class="right-side-content-section-heading">
-                <div class="left">
-                  <span class="red">AVIZVA SOLUTIONS</span> (Associate L1)
-                </div>
-                <div class="right">June 2018 - September 2019</div>
-              </div>
-              <div class="right-side-content-section-data">
-                <ul class="align-content-space-between">
-                  <li class="inline li">
-                    <div class="left bolder bigger">Mibenefits: It is an employee benefits management portal.</div>
-                  </li>
-                  <ul>
-                    <li class="li">Worked on different modules which involved interaction between different endpoints
-                      like PostgreSQL, ElasticSearch, MicroServices, etc.</li>
-                    <li class="li">Key activities:</li>
-                    <ul>
-                      <li class="li">Converting SpringJDBC queries to Spring JPA queries.</li>
-                      <li class="li">Writing unit tests with Mockito and PowerMockito.</li>
-                      <li class="li">Writing LogStash Configuration files.</li>
-                    </ul>
-                    <li class="li">Key modules:</li>
-                    <ul>
-                      <li class="li">StopLoss Widget</li>
-                      <li class="li">Todo List</li>
-                      <li class="li">Inventory display with Dynamic Columns</li>
-                    </ul>
-                    <li class="li"><span class="technology">Technology: PostgreSQL, Spring, ElasticSearch</span></li>
-                  </ul>
               </div>
             </div>
           </div>
