@@ -12,8 +12,8 @@
             "project_and_experience" :
             [
                 {
-                    "name" : "Unreleased Product",
-                    "brief" : "This product focused on the security posture of office 365.",
+                    "name" : "Unreleased Project",
+                    "brief" : "This project focused on the security posture of office 365.",
                     "experience" : [
                         "Involved in the design and development of the product from scratch.",
                         "Development involved integration with azure for security analysis, designing database tables and incorporating different AWS services like SQS, SNS, etc."
