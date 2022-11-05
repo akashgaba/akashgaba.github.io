@@ -12,7 +12,7 @@
             "project_and_experience" :
             [
                 {
-                    "name" : "Unreleased Project",
+                    "name" : "SSPM",
                     "brief" : "This project focused on the security posture of office 365.",
                     "experience" : [
                         "Involved in the design and development of the product from scratch.",
@@ -25,7 +25,7 @@
                     "experience" : [
                         "Designed and developed an easily digestible pdf format summary of the required data points which is delivered to more than 50 thousand users on weekly basis.",
                         "Responsible for the improvement of the AWS fetcher system of inventory. This includes the introduction of a hybrid configurable retry mechanism, monitoring advancement and overall stability of the fetching system.",
-                        "Helps in the development and improvement of different requirements which includes an interaction with different AWS services and code optimization."
+                        "Helped in the development and improvement of different requirements which includes an interaction with different AWS services and code optimization."
                     ]
                 }
             ]
