@@ -4,8 +4,8 @@ let app = Vue.createApp({
         return {
             name: myJson.name,
             profession: myJson.profession,
-            emails: myJson.emails.join(' ,'),
-            phone_numbers: myJson.phone_numbers.join(' ,'),
+            emails: myJson.emails.join(', '),
+            phone_numbers: myJson.phone_numbers.join(', '),
             work_experiences : myJson.work_experiences
         }
     }

@@ -5,6 +5,23 @@
     "phone_numbers":[8285216287, 8700901205],
     "work_experiences": [
         {
+            "title": "Software development engineer III",
+            "company_name": "Expedia Group",
+            "location" : "Gurugram, Haryana",
+            "working_range" : "January 2023 - Present",
+            "project_and_experience" :
+            [
+                {
+                    "name" : "InsurTech Team",
+                    "brief" : "Dedicated team enabling travelers to seamlessly purchase insurance along with various products.",
+                    "experience" : [
+                        "Security Vulnerabilities: Led the identification and resolution of security vulnerabilities in multiple services, enhancing system integrity and reducing potential risks.",
+                        "Shopping Widget Content Modification: Successfully revamped shopping widget content using internal tools, improving user experience and contributing to increased engagement metrics as a part of increased revenue."
+                    ]
+                }
+            ]
+        },
+        {
             "title": "Software Engineer 3",
             "company_name": "Sophos",
             "location" : "Gurugram, Haryana",
