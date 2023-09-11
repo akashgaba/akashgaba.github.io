@@ -2,47 +2,45 @@
     "name": "Akash Gaba",
     "profession": "Software Engineer",
     "emails": ["akashgaba.work@gmail.com"],
-    "phone_numbers":[8285216287, 8700901205],
+    "phone_numbers": [8285216287, 8700901205],
     "work_experiences": [
         {
-            "title": "Software development engineer III",
+            "title": "Software Development Engineer III",
             "company_name": "Expedia Group",
-            "location" : "Gurugram, Haryana",
-            "working_range" : "January 2023 - Present",
-            "project_and_experience" :
-            [
+            "location": "Gurugram, Haryana",
+            "working_range": "January 2023 - Present",
+            "project_and_experience": [
                 {
-                    "name" : "InsurTech Team",
-                    "brief" : "Dedicated team enabling travelers to seamlessly purchase insurance along with various products.",
-                    "experience" : [
-                        "Security Vulnerabilities: Led the identification and resolution of security vulnerabilities in multiple services, enhancing system integrity and reducing potential risks.",
-                        "Shopping Widget Content Modification: Successfully revamped shopping widget content using internal tools, improving user experience and contributing to increased engagement metrics as a part of increased revenue."
+                    "name": "InsurTech Team",
+                    "brief": "Dedicated team enabling travelers to seamlessly purchase insurance along with various products.",
+                    "experience": [
+                        "Led the identification and resolution of security vulnerabilities in multiple services, enhancing system integrity and reducing potential risks.",
+                        "Successfully revamped shopping widget content using internal tools, improving user experience and contributing to increased engagement metrics as a part of increased revenue."
                     ]
                 }
             ]
         },
         {
-            "title": "Software Engineer 3",
+            "title": "Software Engineer III",
             "company_name": "Sophos",
-            "location" : "Gurugram, Haryana",
-            "working_range" : "November 2020 - December 2022",
-            "project_and_experience" :
-            [
+            "location": "Gurugram, Haryana",
+            "working_range": "November 2020 - December 2022",
+            "project_and_experience": [
                 {
-                    "name" : "SSPM",
-                    "brief" : "This project focused on the security posture of office 365.",
-                    "experience" : [
+                    "name": "SSPM",
+                    "brief": "Focused on the security posture of Office 365.",
+                    "experience": [
                         "Involved in the design and development of the product from scratch.",
-                        "Development involved integration with azure for security analysis, designing database tables and incorporating different AWS services like SQS, SNS, etc."
+                        "Integrated with Azure for security analysis, designed database tables, and incorporated different AWS services like SQS, SNS, etc."
                     ]
                 },
                 {
-                    "name" : "Cloud Optix",
-                    "brief" : "It is a Cloud Security Posture Management which manages the security of AWS, GCP and/or Azure cloud infrastructure.",
-                    "experience" : [
-                        "Designed and developed an easily digestible pdf format summary of the required data points which is delivered to more than 50 thousand users on weekly basis.",
-                        "Responsible for the improvement of the AWS fetcher system of inventory. This includes the introduction of a configurable retry mechanism, monitoring advancement and overall stability of the fetching system.",
-                        "Helped in the development and improvement of different requirements which includes an interaction with different AWS services and code optimization."
+                    "name": "Cloud Optix",
+                    "brief": "A Cloud Security Posture Management solution for AWS, GCP, and Azure cloud infrastructure.",
+                    "experience": [
+                        "Designed and developed an easily digestible PDF format summary of the required data points delivered to more than 50 thousand users on a weekly basis.",
+                        "Responsible for improving the AWS fetcher system of inventory, including introducing a configurable retry mechanism, monitoring advancement, and overall stability of the fetching system.",
+                        "Contributed to the development and improvement of different requirements, including interaction with various AWS services and code optimization."
                     ]
                 }
             ]
@@ -50,16 +48,15 @@
         {
             "title": "Software Development Engineer",
             "company_name": "Wheelseye",
-            "location" : "Gurugram, Haryana",
-            "working_range" : "September 2019 - November 2020",
-            "project_and_experience" :
-            [
+            "location": "Gurugram, Haryana",
+            "working_range": "September 2019 - November 2020",
+            "project_and_experience": [
                 {
-                    "name" : "Sales App",
-                    "brief" : "The Sales app of Wheelseye provides a mobile-app-based solution to the complete sales team hierarchy.",
-                    "experience" : [
-                        "Design and development of an invoicing system which manages the daily sales of the service sold. It includes migrating old invoices to the new system, creating a dashboard for operation teams to handle invoices and interacting with different services to process payment.",
-                        "Involved in the design and development of an update/information announcement system for the sales team to take action on. This involved creating a dashboard for the operation team to provide the update for the sales team view in the android app."
+                    "name": "Sales App",
+                    "brief": "Provided a mobile-app-based solution to the complete sales team hierarchy.",
+                    "experience": [
+                        "Designed and developed an invoicing system for managing daily sales of the service sold. This included migrating old invoices to the new system, creating a dashboard for operation teams to handle invoices, and interacting with different services to process payments.",
+                        "Involved in the design and development of an update/information announcement system for the sales team, including creating a dashboard for the operation team to provide updates for the sales team view in the Android app."
                     ]
                 }
             ]
@@ -67,17 +64,16 @@
         {
             "title": "Associate L1",
             "company_name": "Avizva Solutions",
-            "location" : "Gurugram, Haryana",
-            "working_range" : "June 2018 - September 2019",
-            "project_and_experience" :
-            [
+            "location": "Gurugram, Haryana",
+            "working_range": "June 2018 - September 2019",
+            "project_and_experience": [
                 {
-                    "name" : "Mibenefits",
-                    "brief" : "It is an employee benefit management portal.",
-                    "experience" : [
-                        "Involved in requirement gathering and development of different modules. Developed modules which required interaction with different services like Postgres, Elasticsearch, Redis, etc.",
-                        "Involved in improving fundamental features of the existing application.",
-                        "Involved in converting Old SpringJDBC queries to Spring JPA queries which reduced code line to 30%."
+                    "name": "Mibenefits",
+                    "brief": "An employee benefit management portal.",
+                    "experience": [
+                        "Involved in requirement gathering and development of different modules. Developed modules that required interaction with different services like Postgres, Elasticsearch, Redis, etc.",
+                        "Contributed to improving fundamental features of the existing application.",
+                        "Converted old SpringJDBC queries to Spring JPA queries, reducing code lines by 30%."
                     ]
                 }
             ]
