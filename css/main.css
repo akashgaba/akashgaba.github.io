@@ -1,10 +1,10 @@
 :root{
     --full-width: 210mm;
-    --full-height: 272mm;
-    --height-right: 255mm;
+    --full-height: 282mm;
+    --height-right: 270mm;
     --height-top: 17mm;
     --height-left-top: 100mm;
-    --height-left-bottom: 155mm;
+    --height-left-bottom: 180mm;
     --height-technical-skills: 135mm;
 }
 html {
