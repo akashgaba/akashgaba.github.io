@@ -78,5 +78,32 @@
                 }
             ]
         }
+    ],
+    "education_experiences" : [
+        {
+            "college" : "NSIT",
+            "location" : "New Delhi",
+            "period" : "2014-2018",
+            "course" : "B.E. in Instrumentation And Control Engineering",
+            "marks" : "65.49%",
+            "degree" : "University of Delhi"
+        },
+        {
+            "school" : "St. Cecilia School",
+            "location" : "New Delhi",
+            "period" : "2013-2014",
+            "marks" : "91.8%",
+            "class" : "12<sup>th</sup> Class",
+            "board" : "CBSE"
+        },
+        {
+            "school" : "St Peter's Convent",
+            "location" : "New Delhi",
+            "period" : "2011-2012",
+            "cgpa" : "9.2",
+            "class" : "10<sup>th</sup> Class",
+            "board" : "CBSE"
+        }
     ]
+
 }
