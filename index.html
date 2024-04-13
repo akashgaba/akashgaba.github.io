@@ -36,50 +36,26 @@
             <hr>
           </div>
           <div class="education-detail-section">
-            <div class="education-detail">
+            <div class="education-detail" v-for='education_experience in education_experiences'>
               <div class="education-detail-head">
-                <span>NSIT, New Delhi</span>
+                <span>
+                  <span v-if="education_experience.college">{{education_experience.college}}</span>
+                  <span v-else>{{education_experience.school}}</span>, {{education_experience.location}}</span>
                 <span>2014-2018</span>
               </div>
               <div class="education-detail-body">
-                <p class="text-align-justify">B.E. in Instrumentation And Control Engineering</p>
+                <p v-if="education_experience.course"class="text-align-justify">{{education_experience.course}}</p>
                 <p class="justify-content-space-between">
-                  <span>Marks: 65.49%</span>
-                  <span>Degree: University of Delhi</span>
-                </p>
-              </div>
-            </div>
-            <div class="education-detail">
-              <div class="education-detail-head">
-                <span>St. Cecilia School, New Delhi</span>
-                <span>2013-2014</span>
-              </div>
-              <div class="education-detail-body">
-                <p class="justify-content-space-between">
-                  <span>Marks: 91.8%</span>
-                  <span>12
-                    <sup>th</sup> Class</span>
-                  <span>Board: CBSE</span>
-                </p>
-              </div>
-            </div>
-            <div class="education-detail">
-              <div class="education-detail-head">
-                <span>St Peter's Convent, New Delhi</span>
-                <span>2011-2012</span>
-              </div>
-              <div class="education-detail-body">
-                <p class="justify-content-space-between ">
-                  <span>CGPA: 9.2</span>
-                  <span>10
-                    <sup>th</sup> Class</span>
-                  <span>Board: CBSE</span>
+                  <span v-if="education_experience.marks">Marks: {{education_experience.marks}}</span>
+                  <span v-if="education_experience.cgpa">CGPA: {{education_experience.cgpa}}</span>
+                  <span v-if="education_experience.class"><span v-html="education_experience.class"></span></span>
+                  <span v-if="education_experience.degree">Degree: {{education_experience.degree}}</span>
+                  <span v-if="education_experience.board">Board: {{education_experience.board}}</span>
                 </p>
               </div>
             </div>
           </div>
         </div>
-
       </div>
       <div id="bottom">
         <div class="bottom-content">
@@ -166,20 +142,22 @@
           <div class="right-side-content-sections">
 
 
-            <div class="right-side-content-section" v-for = 'work_experience in work_experiences'>
+            <div class="right-side-content-section" v-for='work_experience in work_experiences'>
               <div class="right-side-content-section-heading">
                 <div class="left">
                   <span class="red">{{work_experience.company_name}}</span> ({{work_experience.title}})
                 </div>
                 <div class="right">{{work_experience.working_range}}</div>
               </div>
-              <div class="right-side-content-section-data" v-for = 'project_and_experience in work_experience.project_and_experience'>
+              <div class="right-side-content-section-data"
+                v-for='project_and_experience in work_experience.project_and_experience'>
                 <ul class="align-content-space-between">
                   <li class="inline li">
-                    <div class="left bigger"><strong>{{project_and_experience.name}}</strong>: {{project_and_experience.brief}}</div>
+                    <div class="left bigger"><strong>{{project_and_experience.name}}</strong>:
+                      {{project_and_experience.brief}}</div>
                   </li>
                   <ul>
-                    <li class="li" v-for = 'experience in project_and_experience.experience'>{{experience}}</li>
+                    <li class="li" v-for='experience in project_and_experience.experience'>{{experience}}</li>
                   </ul>
                 </ul>
               </div>
@@ -195,4 +173,5 @@
       </div>
     </div>
 </body>
+
 </html>
