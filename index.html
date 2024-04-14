@@ -152,9 +152,8 @@
               <div class="right-side-content-section-data"
                 v-for='project_and_experience in work_experience.project_and_experience'>
                 <ul class="align-content-space-between">
-                  <li class="inline li">
-                    <div class="left bigger"><strong>{{project_and_experience.name}}</strong>:
-                      {{project_and_experience.brief}}</div>
+                  <li class="inline li padding-zero">
+                    <div class="left bigger"><strong>{{project_and_experience.name}}</strong>: {{project_and_experience.brief}}</div>
                   </li>
                   <ul>
                     <li class="li" v-for='experience in project_and_experience.experience'>{{experience}}</li>
