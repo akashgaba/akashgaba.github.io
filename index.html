@@ -41,7 +41,7 @@
                 <span>
                   <span v-if="education_experience.college">{{education_experience.college}}</span>
                   <span v-else>{{education_experience.school}}</span>, {{education_experience.location}}</span>
-                <span>2014-2018</span>
+                <span>{{education_experience.period}}</span>
               </div>
               <div class="education-detail-body">
                 <p v-if="education_experience.course"class="text-align-justify">{{education_experience.course}}</p>
