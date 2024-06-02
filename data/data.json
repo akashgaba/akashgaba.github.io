@@ -3,7 +3,7 @@
     "profession": "Software Engineer",
     "emails": ["akashgaba.work@gmail.com"],
     "phone_numbers": [8285216287, 8700901205],
-    "summary" : "Akash Gaba is a seasoned Software Engineer specializing in cybersecurity and cloud solutions, with notable contributions at Armorcode, Expedia Group, and Sophos. Armed with a B.E. from NSIT and expertise in Java, Spring, Spring Boot, AWS, and database technologies, he excels in enhancing system security, scalability, and performance.",
+    "summary" : "Experienced Software Engineer specializing in cloud solutions, with notable contributions at Armorcode, Expedia Group, and Sophos. Armed with a B.E. from NSIT and expertise in Java, Spring, Spring Boot, AWS, and database technologies, also has experience in enhancing system security, scalability, and performance.",
     "work_experiences": [
         {
             "title": "Senior Engineer",
@@ -266,7 +266,7 @@
             "items": [
                 "EC2",
                 "S3",
-                "sqs",
+                "SQS",
                 "AWS Shell",
                 "AWS Java SDK",
                 "MySQL",
