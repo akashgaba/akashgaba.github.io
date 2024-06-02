@@ -227,7 +227,7 @@
         },
         {
             "name": "AWS Cloud Services",
-            "items": ["EC2", "S3", "AWS Shell", "AWS Java SDK"]
+            "items": ["EC2", "S3", "SQS", "AWS Shell", "AWS Java SDK"]
         },
         {
             "name": "Database technologies",
@@ -266,6 +266,7 @@
             "items": [
                 "EC2",
                 "S3",
+                "sqs",
                 "AWS Shell",
                 "AWS Java SDK",
                 "MySQL",
