@@ -118,6 +118,40 @@
             "class" : "10<sup>th</sup> Class",
             "board" : "CBSE"
         }
+    ],
+    "skills": [
+        {
+            "name": "Programming Languages",
+            "items": ["Java 8"]
+        },
+        {
+            "name": "Java Development",
+            "items": ["Rest Web Services using Java 8"]
+        },
+        {
+            "name": "Development Frameworks",
+            "items": ["Spring", "Hibernate"]
+        },
+        {
+            "name": "AWS Cloud Services",
+            "items": ["EC2", "S3", "AWS Shell", "AWS Java SDK"]
+        },
+        {
+            "name": "Database technologies",
+            "items": ["MySQL", "PostgreSQL", "Elastic Search"]
+        },
+        {
+            "name": "Version Control Systems",
+            "items": ["Git"]
+        },
+        {
+            "name": "Platforms",
+            "items": ["Windows", "Mac", "Linux"]
+        },
+        {
+            "name": "Other Skills",
+            "items": ["Algorithms", "Data Structures", "Problem Solving"]
+        }
     ]
 
 }

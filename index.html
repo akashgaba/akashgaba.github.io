@@ -64,68 +64,12 @@
             <hr>
           </div>
           <div class="technical-skills">
-            <div class="each-skill-type">
+            <div v-for='skill in skills' class="each-skill-type">
               <div class="each-skill-type-heading">
-                Programming Languages
+                {{skill.name}}
               </div>
               <div class="skill-names">
-                Java 8
-              </div>
-            </div>
-            <div class="each-skill-type">
-              <div class="each-skill-type-heading">
-                Java Development
-              </div>
-              <div class="skill-names">
-                Rest Web Services using Java 8
-              </div>
-            </div>
-            <div class="each-skill-type">
-              <div class="each-skill-type-heading">
-                Development Frameworks
-              </div>
-              <div class="skill-names">
-                Spring, Hibernate
-              </div>
-            </div>
-            <div class="each-skill-type">
-              <div class="each-skill-type-heading">
-                AWS Cloud Services
-              </div>
-              <div class="skill-names">
-                EC2, S3, AWS Shell, AWS Java SDK
-              </div>
-            </div>
-            <div class="each-skill-type">
-              <div class="each-skill-type-heading">
-                Database technologies
-              </div>
-              <div class="skill-names">
-                MySQL, PostgreSQL, Elastic Search
-              </div>
-            </div>
-            <div class="each-skill-type">
-              <div class="each-skill-type-heading">
-                Version Control Systems
-              </div>
-              <div class="skill-names">
-                Git
-              </div>
-            </div>
-            <div class="each-skill-type">
-              <div class="each-skill-type-heading">
-                Platforms
-              </div>
-              <div class="skill-names">
-                Windows, Mac, Linux
-              </div>
-            </div>
-            <div class="each-skill-type">
-              <div class="each-skill-type-heading">
-                Other Skills
-              </div>
-              <div class="skill-names">
-                Algorithms, Data Structures and Problem Solving
+                <span v-for='item in skill.items'>{{item}}</span>
               </div>
             </div>
           </div>
