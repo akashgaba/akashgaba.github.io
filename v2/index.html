@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <script src="https://unpkg.com/vue@3"></script>
+  <script type="module" src="js/app.js" headers="Cache-Control: no-cache"></script>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Chilanka&display=swap" rel="stylesheet">
+  <title>Resume</title>
+</head>
+
+<body id="app">
+  <div id="page">
+    <header>
+      <h1>{{name}}</h1>
+      <p>{{phone_numbers}} | {{emails}} | <a href="https://akashgaba.github.io/">https://akashgaba.github.io/</a></p>
+    </header>
+    <section>
+      <h2>Summary</h2>
+      <p>{{summary}}</p>
+    </section>
+    <section>
+      <h2>Work Experience</h2>
+      <div v-for='work_experience in work_experiences'>
+        <div class="work-experience-header">
+          <h3>{{work_experience.title}}, {{work_experience.company_name}}</h3>
+          <h3 class="location-period">{{work_experience.working_range}}</h3>
+        </div>
+        <div v-for='experience in work_experience.project_and_experience' class="experience-detail">
+          <p><strong>{{experience.name}}:</strong> {{experience.brief}}</p>
+          <ul>
+            <li v-for='detail in experience.experience'>{{detail}}</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Skills</h2>
+      <div v-for="skill in skills" class="skill-category">
+        <h3>{{ skill.name }}:</h3>
+        <span class="skill-items">{{ skill.items}}</span>
+      </div>
+    </section>
+    <section>
+      <h2>Education</h2>
+      <div v-for='education_experience in education_experiences' class="education-experience">
+        <div class="education-header">
+          <h3>
+            <template v-if="education_experience.course">{{education_experience.course}}, </template>
+            {{education_experience.college || education_experience.school}}
+          </h3>
+          <span class="location-period">{{education_experience.location}} | {{education_experience.period}}</span>
+        </div>
+        <div class="education-details">
+          <div v-if="education_experience.marks">Marks: {{education_experience.marks}}</div>
+          <div v-if="education_experience.cgpa">CGPA: {{education_experience.cgpa}}</div>
+          <div v-if="education_experience.degree">Degree: {{education_experience.degree}}</div>
+          <div v-if="education_experience.class"><span v-html="education_experience.class"></div>
+          <div v-if="education_experience.board">Board: {{education_experience.board}}</div>
+        </div>
+        <br>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
