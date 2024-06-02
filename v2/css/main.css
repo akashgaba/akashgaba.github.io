@@ -115,10 +115,7 @@
   }
   
   .education-details div {
-    flex: 1;
-    /* text-align: center; */
-    margin: 0;
-    font-size: calc(3.53mm * var(--font-size-factor)); /* 10pt converted to mm */
+    font-size: calc(4mm * var(--font-size-factor)); /* 10pt converted to mm */
   }
 
   .skill-category {
