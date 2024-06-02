@@ -29,7 +29,7 @@ fetchData().then((myJson) => {
                 phone_numbers: myJson.phone_numbers.join(', '),
                 emails: myJson.emails.join(', '),
                 summary: myJson.summary,
-                work_experiences: myJson.work_experiences,
+                work_experiences: myJson.work_experiences2,
                 education_experiences: myJson.education_experiences,
                 skills: transformedSkills
             }
