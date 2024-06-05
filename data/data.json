@@ -250,7 +250,7 @@
         {
             "name": "Programming and Development",
             "items": [
-                "Java 8",
+                "Java 8,11,17",
                 "Rest Web Services",
                 "Spring",
                 "Spring Boot",
