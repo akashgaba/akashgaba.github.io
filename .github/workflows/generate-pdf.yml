@@ -22,7 +22,7 @@ jobs:
         run: npm install puppeteer
 
       - name: Generate PDF
-        run: node scripts/generate-pdf.js
+        run: node .github/scripts/generate-pdf.js
 
       - name: Commit and push PDF
         run: |
