@@ -11,9 +11,14 @@ const path = require('path');
     const filePath = path.resolve(__dirname, '../../index.html');
     await page.goto(`file://${filePath}`, { waitUntil: 'networkidle0' });
 
-    // Wait for Vue.js to finish rendering
-    // Assuming there's an element with id "app" that Vue.js renders
-    await page.waitForSelector('#app', { visible: true });
+    // Wait for the custom event 'vue-rendered'
+    await page.evaluate(() => {
+        return new Promise((resolve) => {
+            document.addEventListener('vue-rendered', () => {
+                resolve();
+            });
+        });
+    });
 
     // Create PDF with Chrome print settings
     await page.pdf({
