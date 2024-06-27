@@ -14,7 +14,7 @@ const fs = require('fs');
     }
 
     // Create PDF
-    await page.pdf({ path: 'output/generated-file.pdf', format: 'A4' });
+    await page.pdf({ path: 'akashgaba.pdf', format: 'A4' });
 
     await browser.close();
 })();
