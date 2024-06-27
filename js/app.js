@@ -17,3 +17,8 @@ let app = Vue.createApp({
     }
 });
 app.mount('#app');
+// In your main Vue component (e.g., App.vue)
+mounted() {
+    // Emit a custom event when the Vue component is mounted and rendered
+    document.dispatchEvent(new Event('vue-rendered'));
+}
