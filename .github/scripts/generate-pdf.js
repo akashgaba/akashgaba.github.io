@@ -1,20 +1,28 @@
 const puppeteer = require('puppeteer');
-const fs = require('fs');
+const path = require('path');
 
 (async () => {
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch({
+        args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
     const page = await browser.newPage();
 
-    // Load your HTML file
-    await page.goto(`file://${process.cwd()}/index.html`, { waitUntil: 'networkidle0' });
+    // Load your main HTML file
+    const filePath = path.resolve(__dirname, '../../index.html');
+    await page.goto(`file://${filePath}`, { waitUntil: 'networkidle0' });
 
-    // Ensure the output directory exists
-    if (!fs.existsSync('output')){
-        fs.mkdirSync('output');
-    }
-
-    // Create PDF
-    await page.pdf({ path: 'akashgaba.pdf', format: 'A4' });
+    // Create PDF with Chrome print settings
+    await page.pdf({
+        path: path.resolve(__dirname, '../../akashgaba.pdf'),
+        format: 'A4',
+        printBackground: true,
+        margin: {
+            top: '10mm',
+            bottom: '10mm',
+            left: '10mm',
+            right: '10mm'
+        }
+    });
 
     await browser.close();
 })();
