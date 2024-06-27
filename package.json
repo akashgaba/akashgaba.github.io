@@ -1,0 +1,14 @@
+{
+  "name": "akashgaba.github.io",
+  "version": "1.0.0",
+  "description": "A project to generate PDF from HTML on GitHub Pages",
+  "main": "index.js",
+  "scripts": {
+    "generate-pdf": "node scripts/generate-pdf.js"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^10.0.0"
+  }
+}
