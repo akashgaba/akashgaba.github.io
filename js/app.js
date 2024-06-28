@@ -1,24 +1,45 @@
-import myJson from '../data/data.json' assert {type: 'json'};
-let app = Vue.createApp({
-    data: function () {
-        let transformedSkills = myJson.skills.map(skill => ({
-            name: skill.name,
-            items: skill.items.join(', ')
-        }));
-        return {
-            name: myJson.name,
-            profession: myJson.profession,
-            emails: myJson.emails.join(', '),
-            phone_numbers: myJson.phone_numbers.join(', '),
-            work_experiences : myJson.work_experiences,
-            education_experiences : myJson.education_experiences,
-            skills : transformedSkills
+async function fetchData() {
+    let data;
+    try {
+        // Try to fetch local data.json
+        data = await import('../../data/data.json', { assert: { type: 'json' } });
+        return data.default;
+    } catch (error) {
+        console.warn('Local data.json not found, fetching from external URL');
+        // Fetch data from external URL
+        const response = await fetch('https://akashgaba.github.io/data/data.json');
+        if (!response.ok) {
+            throw new Error('Failed to fetch data from external URL');
         }
+        data = await response.json();
+        return data;
     }
-});
-app.mount('#app');
-// In your main Vue component (e.g., App.vue)
-mounted() {
-    // Emit a custom event when the Vue component is mounted and rendered
-    document.dispatchEvent(new Event('vue-rendered'));
 }
+
+fetchData().then((myJson) => {
+    let transformedSkills = myJson.skillsV2.map(skill => ({
+        name: skill.name,
+        items: skill.items.join(', ')
+    }));
+
+    let app = Vue.createApp({
+        data: function () {
+            let transformedSkills = myJson.skills.map(skill => ({
+                name: skill.name,
+                items: skill.items.join(', ')
+            }));
+            return {
+                name: myJson.name,
+                profession: myJson.profession,
+                emails: myJson.emails.join(', '),
+                phone_numbers: myJson.phone_numbers.join(', '),
+                work_experiences : myJson.work_experiences,
+                education_experiences : myJson.education_experiences,
+                skills : transformedSkills
+            }
+        }
+    });
+    app.mount('#app');
+}).catch(error => {
+    console.error('Error fetching data:', error);
+});
