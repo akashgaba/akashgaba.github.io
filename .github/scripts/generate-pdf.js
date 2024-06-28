@@ -11,6 +11,9 @@ const path = require('path');
     const filePath = path.resolve(__dirname, '../../index.html');
     await page.goto(`file://${filePath}`, { waitUntil: 'networkidle0' });
 
+    // Wait for 10 seconds
+    await new Promise(resolve => setTimeout(resolve, 10000));
+
     // Create PDF with Chrome print settings
     await page.pdf({
         path: path.resolve(__dirname, '../../akashgaba.pdf'),
