@@ -11,15 +11,6 @@ const path = require('path');
     const filePath = path.resolve(__dirname, '../../index.html');
     await page.goto(`file://${filePath}`, { waitUntil: 'networkidle0' });
 
-    // Wait for the custom event 'vue-rendered'
-    await page.evaluate(() => {
-        return new Promise((resolve) => {
-            document.addEventListener('vue-rendered', () => {
-                resolve();
-            });
-        });
-    });
-
     // Create PDF with Chrome print settings
     await page.pdf({
         path: path.resolve(__dirname, '../../akashgaba.pdf'),
