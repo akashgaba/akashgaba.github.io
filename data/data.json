@@ -109,7 +109,8 @@
                         "Implemented a heartbeat system using Redis's TTL to enhance job concurrency management in a distributed system, ensuring robust monitoring of job statuses.",
                         "Transitioned job scheduling from CloudWatch to Quartz to improve scheduling capabilities in a distributed environment and created NewRelic and Logz.io dashboards for robust monitoring of various jobs and APIs.",
                         "Created a generic JUnit system for testing of parsing logics using parameterized system and Mockito, followed by mentoring and leading the progress of the system. Out of 50 parsers, we managed to write tests for 20 of them, achieving coverage of more than 80% in each.",
-                        "Created a distributed locking system to overcome duplicate requests in any consumer using Redis."
+                        "Created a distributed locking system to overcome duplicate requests in any consumer using Redis.",
+                        "Optimized database performance by interpolating and deleting 500M redundant rows from a 550M-row partitioned table using batch migration, significantly improving query efficiency."
                     ]
                 }
             ]
