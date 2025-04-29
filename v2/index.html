@@ -18,7 +18,8 @@
   <div id="page">
     <header>
       <h1>{{name}}</h1>
-      <p>{{phone_numbers}} | {{emails}} | <a href="https://akashgaba.github.io/v2">https://akashgaba.github.io/v2</a></p>
+      <p>{{phone_numbers}} | {{emails}}
+      </p>
     </header>
     <section>
       <h2>Summary</h2>
@@ -35,6 +36,7 @@
           <p><strong>{{experience.name}}:</strong> {{experience.brief}}</p>
           <ul>
             <li v-for='detail in experience.experience'>{{detail}}</li>
+            <li class="tech-stack">Tech Stack: {{experience.tech_stack}}</li>
           </ul>
         </div>
       </div>

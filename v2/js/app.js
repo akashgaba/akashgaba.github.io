@@ -1,19 +1,12 @@
 async function fetchData() {
     let data;
-    try {
-        // Try to fetch local data.json
-        data = await import('../../data/data.json', { assert: { type: 'json' } });
-        return data.default;
-    } catch (error) {
-        console.warn('Local data.json not found, fetching from external URL');
-        // Fetch data from external URL
-        const response = await fetch('https://akashgaba.github.io/data/data.json');
+    const origin = window.location.origin;
+    const response = await fetch(`${origin}/data/data.json`);
         if (!response.ok) {
             throw new Error('Failed to fetch data from external URL');
         }
         data = await response.json();
         return data;
-    }
 }
 
 fetchData().then((myJson) => {

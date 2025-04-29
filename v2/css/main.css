@@ -1,135 +1,165 @@
 :root {
-    --primary-color: #6f42c1;
-    --secondary-color: #333;
-    --background-color: #fff;
-    --text-color: #000;
-    --font-size-factor: 0.82; /* Adjust this factor as needed */
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.4;
-    margin: 0;
-    padding: 0;
-    background-color: var(--background-color);
-    color: var(--text-color);
-  }
-  
-  #page {
-    width: 210mm; /* A4 width in millimeters */
-    height: 297mm; /* A4 height in millimeters */
-    padding: 25.4mm; /* 1 inch in millimeters */
-    margin: auto;
-    background: white;
-  }
-  
-  header {
-    text-align: center;
-    margin-bottom: 2.54mm; /* 1em converted to mm */
-  }
-  
-  header h1 {
-    font-size: calc(8.47mm * var(--font-size-factor)); /* 24pt converted to mm */
-    color: var(--primary-color);
-    margin: 0;
-  }
-  
-  header p {
-    font-size: calc(3.53mm * var(--font-size-factor)); /* 10pt converted to mm */
-    margin: 1.27mm 0; /* 0.5em converted to mm */
-  }
-  
-  section {
-    margin-bottom: 2.54mm; /* 1em converted to mm */
-  }
-  
-  section h2 {
-    font-size: calc(4.23mm * var(--font-size-factor)); /* 12pt converted to mm */
-    color: var(--primary-color);
-    border-bottom: 0.35mm solid var(--primary-color); /* 1px converted to mm */
-    padding-bottom: 0.88mm; /* 0.25em converted to mm */
-  }
-  
-  section h3 {
-    font-size: calc(4.23mm * var(--font-size-factor)); /* 12pt converted to mm */
-    margin: 0;
-  }
-  
-  section p,
-  section ul {
-    font-size: calc(3.53mm * var(--font-size-factor)); /* 10pt converted to mm */
-    margin: 1.27mm 0; /* 0.5em converted to mm */
-  }
-  
-  section ul {
-    list-style-type: disc;
-    margin-left: 5.08mm; /* 1em converted to mm */
-  }
-  
-  section ul li {
-    margin-bottom: 1.27mm; /* 0.5em converted to mm */
-  }
-  
-  .work-experience-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .experience-detail {
-    margin-left: 5mm;
-  }
-  
-  .experience-detail ul {
-    padding-left: 2.5mm;
-  }
-  
-  .experience-detail ul li {
-    padding-left: 1.25mm;
-    margin-left: 1.25mm;
-  }
-  
-  section span {
-    font-size: calc(3.53mm * var(--font-size-factor)); /* Adjust the base size as needed */
-  }
-  
-  .education-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .education-header h3 {
-    margin: 0;
-    font-size: calc(4.23mm * var(--font-size-factor)); /* 12pt converted to mm */
-  }
-  
-  .education-header .location-period {
-    font-size: calc(4.23mm * var(--font-size-factor)); /* 12pt converted to mm */
-  }
-  
-  .education-details {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 1.27mm; /* Space between header and details */
-  }
-  
-  .education-details div {
-    font-size: calc(4mm * var(--font-size-factor)); /* 10pt converted to mm */
-  }
+  --primary-color: #6f42c1;
+  --secondary-color: #333;
+  --background-color: #fff;
+  --text-color: #000;
+  --font-size-factor: 0.82;
+  /* Adjust this factor as needed */
+}
 
-  .skill-category {
-    margin-bottom: 5mm; /* Adjust margin as needed */
-  }
-  
-  .skill-category h3 {
-    display: inline; /* Display inline to keep it in the same line as the items */
-    font-size: calc(4.23mm * var(--font-size-factor)); /* 12pt converted to mm */
-    margin-right: 2mm; /* Space between category name and items */
-  }
-  
-  .skill-items {
-    font-size: calc(3.53mm * var(--font-size-factor)); /* 10pt converted to mm */
-  }
-  
-  
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+#page {
+  width: 210mm;
+  /* A4 width in millimeters */
+  height: 297mm;
+  /* A4 height in millimeters */
+  padding: 25.4mm;
+  /* 1 inch in millimeters */
+  margin: auto;
+  background: white;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2.54mm;
+  /* 1em converted to mm */
+}
+
+header h1 {
+  font-size: calc(8.47mm * var(--font-size-factor));
+  /* 24pt converted to mm */
+  color: var(--primary-color);
+  margin: 0;
+}
+
+header p {
+  font-size: calc(3.53mm * var(--font-size-factor));
+  /* 10pt converted to mm */
+  margin: 1.27mm 0;
+  /* 0.5em converted to mm */
+}
+
+section {
+  margin-bottom: 2.54mm;
+  /* 1em converted to mm */
+}
+
+section h2 {
+  font-size: calc(4.23mm * var(--font-size-factor));
+  /* 12pt converted to mm */
+  color: var(--primary-color);
+  border-bottom: 0.35mm solid var(--primary-color);
+  /* 1px converted to mm */
+  padding-bottom: 0.88mm;
+  /* 0.25em converted to mm */
+}
+
+section h3 {
+  font-size: calc(4.23mm * var(--font-size-factor));
+  /* 12pt converted to mm */
+  margin: 0;
+}
+
+section p,
+section ul {
+  font-size: calc(3.53mm * var(--font-size-factor));
+  /* 10pt converted to mm */
+  margin: 1.27mm 0;
+  /* 0.5em converted to mm */
+}
+
+section ul {
+  list-style-type: disc;
+  margin-left: 5.08mm;
+  /* 1em converted to mm */
+}
+
+section ul li {
+  margin-bottom: 1.27mm;
+  /* 0.5em converted to mm */
+}
+
+.work-experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience-detail {
+  margin-left: 5mm;
+}
+
+.experience-detail ul {
+  padding-left: 2.5mm;
+}
+
+.experience-detail ul li {
+  padding-left: 1.25mm;
+  margin-left: 1.25mm;
+}
+
+section span {
+  font-size: calc(3.53mm * var(--font-size-factor));
+  /* Adjust the base size as needed */
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.education-header h3 {
+  margin: 0;
+  font-size: calc(4.23mm * var(--font-size-factor));
+  /* 12pt converted to mm */
+}
+
+.education-header .location-period {
+  font-size: calc(4.23mm * var(--font-size-factor));
+  /* 12pt converted to mm */
+}
+
+.education-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.27mm;
+  /* Space between header and details */
+}
+
+.education-details div {
+  font-size: calc(4mm * var(--font-size-factor));
+  /* 10pt converted to mm */
+}
+
+.skill-category {
+  margin-bottom: 5mm;
+  /* Adjust margin as needed */
+}
+
+.skill-category h3 {
+  display: inline;
+  /* Display inline to keep it in the same line as the items */
+  font-size: calc(4.23mm * var(--font-size-factor));
+  /* 12pt converted to mm */
+  margin-right: 2mm;
+  /* Space between category name and items */
+}
+
+.skill-items {
+  font-size: calc(3.53mm * var(--font-size-factor));
+  /* 10pt converted to mm */
+}
+
+/* remove the default marker on this item only */
+.tech-stack {
+  color: gray;
+}

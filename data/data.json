@@ -1,9 +1,13 @@
 {
     "name": "Akash Gaba",
     "profession": "Software Engineer",
-    "emails": ["akashgaba.work@gmail.com"],
-    "phone_numbers": [8285216287, 8700901205],
-    "summary" : "6 years of experience as a Software Engineer, with notable contributions at Armorcode, Expedia Group, and Sophos. Armed with a B.E. from NSIT and expertise in Java, Spring, Spring Boot, AWS, and database technologies. Also has experience in enhancing scalability and performance.",
+    "emails": [
+        "akashgaba.work@gmail.com"
+    ],
+    "phone_numbers": [
+        "+918700901205"
+    ],
+    "summary": "Software engineer with 6 years of backend experience at Armorcode, Expedia Group, and Sophos. Graduated with a B.E. from NSIT (2018). Skilled in Java, Spring/Spring Boot, AWS, and both relational and NoSQL databases, with a solid record of improving system scalability and performance.",
     "work_experiences": [
         {
             "title": "Senior Engineer",
@@ -110,8 +114,9 @@
                         "Transitioned job scheduling from CloudWatch to Quartz to improve scheduling capabilities in a distributed environment and created NewRelic and Logz.io dashboards for robust monitoring of various jobs and APIs.",
                         "Created a generic JUnit system for testing of parsing logics using parameterized system and Mockito, followed by mentoring and leading the progress of the system. Out of 50 parsers, we managed to write tests for 20 of them, achieving coverage of more than 80% in each.",
                         "Created a distributed locking system to overcome duplicate requests in any consumer using Redis.",
-                        "Optimized database performance by interpolating and deleting 500M redundant rows from a 550M-row partitioned table using batch migration, significantly improving query efficiency."
-                    ]
+                        "Optimized database performance by identifying and deleting 500M redundant rows from a 550M-row partitioned table using batch migration, significantly improving query efficiency."
+                    ],
+                    "tech_stack": "Java 21, Spring Boot, Hibernate, S3, SQS, Kafka, PostgreSQL, MySQL, Elasticsearch"
                 }
             ]
         },
@@ -127,7 +132,8 @@
                     "experience": [
                         "Led the resolution of security vulnerabilities in multiple services, identified by diagnostic tools, enhancing system integrity and reducing potential risks.",
                         "Successfully revamped shopping widget content using internal tools, improving user experience and contributing to increased engagement metrics as a part of increased revenue."
-                    ]
+                    ],
+                    "tech_stack": "Java 8/11, Kotlin, Spring Boot, S3, EC2"
                 }
             ]
         },
@@ -142,7 +148,8 @@
                     "brief": "Focused on the security posture of Office 365.",
                     "experience": [
                         "Designed and developed a new product from scratch, integrating Azure for security analysis and designing database tables for an alert engine, while also incorporating AWS services such as SQS and SNS."
-                    ]
+                    ],
+                    "tech_stack": "Java 8, Spring Boot, Docker, PostgreSQL"
                 },
                 {
                     "name": "Cloud Optix",
@@ -150,7 +157,8 @@
                     "experience": [
                         "Engineered a PDF summary system, delivering weekly data points to over 50,000 users, and enhanced the AWS inventory fetcher system by implementing a configurable retry mechanism and advancing system monitoring and stability.",
                         "Executed enhancements and stabilization across multiple projects, resolving issues and refining the AWS fetcher system for greater stability. Developed a configurable exponential retry backoff library and delivered high-quality, maintainable code."
-                    ]
+                    ],
+                    "tech_stack": "Java 8, Spring Boot, PostgreSQL, Elasticsearch, Hibernate"
                 }
             ]
         },
@@ -166,7 +174,8 @@
                     "experience": [
                         "Developed an invoicing system to manage daily sales, incorporating legacy data migration, a new operational dashboard, and payment processing integrations.",
                         "Designed an announcement system for the sales team, featuring a dashboard for operational updates viewable on the Android app."
-                    ]
+                    ],
+                    "tech_stack": "Java 8, Spring Boot, PostgreSQL, Hibernate"
                 }
             ]
         },
@@ -182,77 +191,105 @@
                     "experience": [
                         "Developed backend modules, including a stop-loss widget that migrates data from SQL Server to Elasticsearch. Also developed the backend for multiple widgets using PostgreSQL and Elasticsearch, boosting core application functionality.",
                         "Optimized database interactions by converting SpringJDBC queries to Spring JPA, achieving a 30% reduction in code complexity."
-                    ]
+                    ],
+                    "tech_stack": "Java 8, Spring Framework, Spring Boot, PostgreSQL, Hibernate, Elasticsearch"
                 }
             ]
         }
     ],
-    "education_experiences" : [
+    "education_experiences": [
         {
-            "college" : "NSIT",
-            "location" : "New Delhi",
-            "period" : "2014-2018",
-            "course" : "B.E. in Instrumentation And Control Engineering",
-            "marks" : "65.49%",
-            "degree" : "University of Delhi"
+            "college": "NSIT",
+            "location": "New Delhi",
+            "period": "2014-2018",
+            "course": "B.E. in Instrumentation And Control Engineering",
+            "marks": "65.49%",
+            "degree": "University of Delhi"
         },
         {
-            "school" : "St. Cecilia School",
-            "location" : "New Delhi",
-            "period" : "2013-2014",
-            "marks" : "91.8%",
-            "class" : "12<sup>th</sup> Class",
-            "board" : "CBSE"
+            "school": "St. Cecilia School",
+            "location": "New Delhi",
+            "period": "2013-2014",
+            "marks": "91.8%",
+            "class": "12th Class",
+            "board": "CBSE"
         },
         {
-            "school" : "St Peter's Convent",
-            "location" : "New Delhi",
-            "period" : "2011-2012",
-            "cgpa" : "9.2",
-            "class" : "10<sup>th</sup> Class",
-            "board" : "CBSE"
+            "school": "St Peter's Convent",
+            "location": "New Delhi",
+            "period": "2011-2012",
+            "cgpa": "9.2",
+            "class": "10th Class",
+            "board": "CBSE"
         }
     ],
     "skills": [
         {
             "name": "Programming Languages",
-            "items": ["Java 8"]
+            "items": [
+                "Java 8"
+            ]
         },
         {
             "name": "Java Development",
-            "items": ["Rest Web Services using Java 8"]
+            "items": [
+                "REST Web Services using Java 8"
+            ]
         },
         {
             "name": "Development Frameworks",
-            "items": ["Spring", "Hibernate"]
+            "items": [
+                "Spring",
+                "Hibernate"
+            ]
         },
         {
             "name": "AWS Cloud Services",
-            "items": ["EC2", "S3", "SQS", "AWS Shell", "AWS Java SDK"]
+            "items": [
+                "EC2",
+                "S3",
+                "SQS",
+                "AWS Shell",
+                "AWS Java SDK"
+            ]
         },
         {
             "name": "Database technologies",
-            "items": ["MySQL", "PostgreSQL", "Elastic Search"]
+            "items": [
+                "MySQL",
+                "PostgreSQL",
+                "Elasticsearch"
+            ]
         },
         {
             "name": "Version Control Systems",
-            "items": ["Git"]
+            "items": [
+                "Git"
+            ]
         },
         {
             "name": "Platforms",
-            "items": ["Windows", "Mac", "Linux"]
+            "items": [
+                "Windows",
+                "Mac",
+                "Linux"
+            ]
         },
         {
             "name": "Other Skills",
-            "items": ["Algorithms", "Data Structures", "Problem Solving"]
+            "items": [
+                "Algorithms",
+                "Data Structures",
+                "Problem Solving"
+            ]
         }
     ],
     "skillsV2": [
         {
             "name": "Programming and Development",
             "items": [
-                "Java 8,11,17",
-                "Rest Web Services",
+                "Java 8/11/17/21",
+                "REST Web Services",
                 "Spring",
                 "Spring Boot",
                 "Hibernate",
@@ -272,7 +309,7 @@
                 "AWS Java SDK",
                 "MySQL",
                 "PostgreSQL",
-                "Elastic Search"
+                "Elasticsearch"
             ]
         },
         {
@@ -284,5 +321,4 @@
             ]
         }
     ]
-
 }
