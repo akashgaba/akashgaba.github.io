@@ -1,9 +1,13 @@
 {
     "name": "Akash Gaba",
     "profession": "Software Engineer",
-    "emails": ["akashgaba.work@gmail.com"],
-    "phone_numbers": [8285216287, 8700901205],
-    "summary" : "6 years of experience as a Software Engineer, with notable contributions at Armorcode, Expedia Group, and Sophos. Armed with a B.E. from NSIT and expertise in Java, Spring, Spring Boot, AWS, and database technologies. Also has experience in enhancing scalability and performance.",
+    "emails": [
+        "akashgaba.work@gmail.com"
+    ],
+    "phone_numbers": [
+        8700901205
+    ],
+    "summary": "7 years of experience as a Software Engineer, with notable contributions at Armorcode, Expedia Group, and Sophos. Holding a B.E. from NSIT and expertise in Java, Spring, Spring Boot, AWS, and database technologies. Also has experience in enhancing scalability and performance.",
     "work_experiences": [
         {
             "title": "Senior Engineer",
@@ -99,18 +103,35 @@
             "title": "Senior Engineer",
             "company_name": "Armorcode",
             "location": "Gurugram, Haryana",
-            "working_range": "October 2023 - Present",
+            "working_range": "October 2023 - July 2025",
             "project_and_experience": [
                 {
                     "name": "Armorcode",
                     "brief": "ArmorCode offers an integrated cybersecurity platform that streamlines application security and vulnerability management to enhance security operations.",
-                    "experience": [
-                        "Developed a configurable data archiving system, converting historical data into Avro format for storage on S3, with integration of crawlers to facilitate querying via Athena.",
-                        "Implemented a heartbeat system using Redis's TTL to enhance job concurrency management in a distributed system, ensuring robust monitoring of job statuses.",
-                        "Transitioned job scheduling from CloudWatch to Quartz to improve scheduling capabilities in a distributed environment and created NewRelic and Logz.io dashboards for robust monitoring of various jobs and APIs.",
-                        "Created a generic JUnit system for testing of parsing logics using parameterized system and Mockito, followed by mentoring and leading the progress of the system. Out of 50 parsers, we managed to write tests for 20 of them, achieving coverage of more than 80% in each.",
-                        "Created a distributed locking system to overcome duplicate requests in any consumer using Redis.",
-                        "Optimized database performance by interpolating and deleting 500M redundant rows from a 550M-row partitioned table using batch migration, significantly improving query efficiency."
+                    
+                    "experience_with_heading": [
+                        {
+                            "category": "Customer-Facing Features",
+                            "items": [
+                                "Worked with product, QA, and frontend teams to build a daily stats system for large-scale datasets, optimizing queries and caching for low-latency analytics dashboards, supporting APIs for querying millions of rows/documents.",
+                                "Built a customizable mailing system for users to receive tailored reports, serving hundreds of customers and sending tens of thousands of reports daily."
+                            ]
+                        },
+                        {
+                            "category": "Performance Optimization",
+                            "items": [
+                                "Improved database performance by removing 500M redundant rows from a 550M-row partitioned table via batch migration, cutting p99 query latency from 30s to 5s.",
+                                "Optimized an Elasticsearch data retrieval job task, reducing overall execution time from 15 hours to 30 minutes."
+                            ]
+                        },
+                        {
+                            "category": "Developer Tools",
+                            "items": [
+                                "Built a system to archive data in Avro format on S3, integrated with crawlers for Athena querying.",
+                                "Created a Redis TTL heartbeat system for job concurrency and a locking system to avoid duplicate requests.",
+                                "Built a generic JUnit testing framework using parameterized tests and Mockito, guiding a team to achieve over 80% test coverage for 20 of 50 parsers."
+                            ]
+                        }
                     ]
                 }
             ]
@@ -187,64 +208,91 @@
             ]
         }
     ],
-    "education_experiences" : [
+    "education_experiences": [
         {
-            "college" : "NSIT",
-            "location" : "New Delhi",
-            "period" : "2014-2018",
-            "course" : "B.E. in Instrumentation And Control Engineering",
-            "marks" : "65.49%",
-            "degree" : "University of Delhi"
+            "college": "NSIT",
+            "location": "New Delhi",
+            "period": "2014-2018",
+            "course": "B.E. in Instrumentation And Control Engineering",
+            "marks": "65.49%",
+            "degree": "University of Delhi"
         },
         {
-            "school" : "St. Cecilia School",
-            "location" : "New Delhi",
-            "period" : "2013-2014",
-            "marks" : "91.8%",
-            "class" : "12<sup>th</sup> Class",
-            "board" : "CBSE"
+            "school": "St. Cecilia School",
+            "location": "New Delhi",
+            "period": "2013-2014",
+            "marks": "91.8%",
+            "class": "12<sup>th</sup> Class",
+            "board": "CBSE"
         },
         {
-            "school" : "St Peter's Convent",
-            "location" : "New Delhi",
-            "period" : "2011-2012",
-            "cgpa" : "9.2",
-            "class" : "10<sup>th</sup> Class",
-            "board" : "CBSE"
+            "school": "St Peter's Convent",
+            "location": "New Delhi",
+            "period": "2011-2012",
+            "cgpa": "9.2",
+            "class": "10<sup>th</sup> Class",
+            "board": "CBSE"
         }
     ],
     "skills": [
         {
             "name": "Programming Languages",
-            "items": ["Java 8"]
+            "items": [
+                "Java 8"
+            ]
         },
         {
             "name": "Java Development",
-            "items": ["Rest Web Services using Java 8"]
+            "items": [
+                "Rest Web Services using Java 8"
+            ]
         },
         {
             "name": "Development Frameworks",
-            "items": ["Spring", "Hibernate"]
+            "items": [
+                "Spring",
+                "Hibernate"
+            ]
         },
         {
             "name": "AWS Cloud Services",
-            "items": ["EC2", "S3", "SQS", "AWS Shell", "AWS Java SDK"]
+            "items": [
+                "EC2",
+                "S3",
+                "SQS",
+                "AWS Shell",
+                "AWS Java SDK"
+            ]
         },
         {
             "name": "Database technologies",
-            "items": ["MySQL", "PostgreSQL", "Elastic Search"]
+            "items": [
+                "MySQL",
+                "PostgreSQL",
+                "Elastic Search"
+            ]
         },
         {
             "name": "Version Control Systems",
-            "items": ["Git"]
+            "items": [
+                "Git"
+            ]
         },
         {
             "name": "Platforms",
-            "items": ["Windows", "Mac", "Linux"]
+            "items": [
+                "Windows",
+                "Mac",
+                "Linux"
+            ]
         },
         {
             "name": "Other Skills",
-            "items": ["Algorithms", "Data Structures", "Problem Solving"]
+            "items": [
+                "Algorithms",
+                "Data Structures",
+                "Problem Solving"
+            ]
         }
     ],
     "skillsV2": [
@@ -284,5 +332,4 @@
             ]
         }
     ]
-
 }
