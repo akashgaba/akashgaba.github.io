@@ -2,8 +2,9 @@ async function fetchData() {
     let data;
     try {
         // Try to fetch local data.json
-        data = await import('../../data/data.json', { assert: { type: 'json' } });
-        return data.default;
+        const response = await fetch('../..//data/data.json');
+        data = await response.json();
+        return data;
     } catch (error) {
         console.warn('Local data.json not found, fetching from external URL');
         // Fetch data from external URL

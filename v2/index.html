@@ -33,9 +33,17 @@
         </div>
         <div v-for='experience in work_experience.project_and_experience' class="experience-detail">
           <p><strong>{{experience.name}}:</strong> {{experience.brief}}</p>
-          <ul>
+          <ul v-if="experience.experience">
             <li v-for='detail in experience.experience'>{{detail}}</li>
           </ul>
+          <div v-else>
+            <div v-for="section in experience.experience_with_heading" :key="section.category">
+              <h3>{{ section.category }}</h3>
+              <ul>
+                <li v-for="item in section.items" :key="item">{{ item }}</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </section>

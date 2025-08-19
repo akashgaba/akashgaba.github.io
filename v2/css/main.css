@@ -111,7 +111,7 @@
   .education-details {
     display: flex;
     justify-content: space-between;
-    margin-top: 1.27mm; /* Space between header and details */
+    margin-top: 0mm; /* Space between header and details */
   }
   
   .education-details div {
@@ -119,7 +119,7 @@
   }
 
   .skill-category {
-    margin-bottom: 5mm; /* Adjust margin as needed */
+    margin-bottom: 1mm; /* Adjust margin as needed */
   }
   
   .skill-category h3 {
